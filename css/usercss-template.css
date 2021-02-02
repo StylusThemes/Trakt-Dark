@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name         template
+@version      0.0.0
+@description  template
+@namespace    https://github.com/StylusThemes
+@author       StylusThemes <https://github.com/StylusThemes>
+@homepageURL  https://github.com/StylusThemes/.Template
+@supportURL   https://github.com/StylusThemes/.Template/issues/
+@updateURL    https://raw.githubusercontent.com/StylusThemes/.Template/master/style.user.css
+@license      CC-BY-SA-4.0
+==/UserStyle== */
+@-moz-document domain("example.com") {
+{{theme}}
+}

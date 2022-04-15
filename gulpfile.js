@@ -6,9 +6,7 @@ const cleanCSS = require( 'gulp-clean-css' );
 const gulp = require( 'gulp' )
 const insert = require( 'gulp-file-insert' )
 const rename = require( 'gulp-rename' )
-const sass = require( 'gulp-sass' )
-
-sass.compiler = require( 'node-sass' )
+const sass = require( 'gulp-dart-sass' )
 
 gulp.task( 'autoprefix', function () {
   return gulp.src( './css/theme/*.css' )
@@ -30,7 +28,13 @@ gulp.task( 'minify-css', function () {
 gulp.task( 'usercss', function () {
   return gulp.src( './css/usercss-template.css' )
     .pipe( insert( {
-      '{{theme}}': './css/theme/theme.css'
+      '{{theme}}': './css/theme/theme.css',
+      '{{dark-knight-theme}}': './css/optionals/min/dark-knight-theme.min.css',
+      '{{hide-ads}}': './css/optionals/min/hide-ads.min.css',
+      '{{hide-vip}}': './css/optionals/min/hide-vip.min.css',
+      '{{hide-watch-now}}': './css/optionals/min/hide-watch-now.min.css',
+      '{{last-watched-bg}}': './css/optionals/min/last-watched-bg.min.css',
+      '{{custom-bg}}': './css/optionals/min/custom-bg.min.css'
     } ) )
     .pipe( rename( 'style.user.css' ) )
     .pipe( beautify.css( {

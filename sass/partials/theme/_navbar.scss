@@ -1,0 +1,10 @@
+// Navigation Menu
+.no-touch {
+  header#top-nav {
+    background: $transparent !important;
+
+    &:hover {
+      background: $transparent !important;
+    }
+  }
+}

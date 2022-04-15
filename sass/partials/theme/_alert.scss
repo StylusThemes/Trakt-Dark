@@ -1,0 +1,14 @@
+// Alerts & Toasts
+#toast-container.toast-top-full-width {
+  .toast.toast-success {
+    border: 1px solid $black !important;
+    color: $white !important;
+    background-color: $transparent !important;
+  }
+}
+
+.alert {
+  border: 1px solid $black !important;
+  color: $white !important;
+  background-color: $transparent !important;
+}

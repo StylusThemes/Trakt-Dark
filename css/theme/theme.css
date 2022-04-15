@@ -1,0 +1,191 @@
+[class=trakt]::after {
+  white-space: pre !important;
+  content: "\a                Trakt Dark Ver. 0.0.1" !important;
+}
+
+#info-wrapper .info #actors .posters ul li .character {
+  color: #fff !important;
+}
+#info-wrapper .info #actors .posters ul:hover li .titles .name {
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+.tooltip-inner {
+  border: 1px solid #000102 !important;
+  color: #fff !important;
+  background-color: #1d1e22 !important;
+}
+
+.tooltip .alt {
+  color: #fff !important;
+}
+.tooltip .alt2 {
+  color: #bbb !important;
+}
+
+#toast-container.toast-top-full-width .toast.toast-success {
+  border: 1px solid #000 !important;
+  color: #fff !important;
+  background-color: rgba(29, 30, 34, 0.65) !important;
+}
+
+.alert {
+  border: 1px solid #000 !important;
+  color: #fff !important;
+  background-color: rgba(29, 30, 34, 0.65) !important;
+}
+
+#auth-form-wrapper .logo-wrapper .logo {
+  background: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark-Old/dev/images/logos/dark_logo_(1000x1000).png") no-repeat !important;
+  background-size: 128px 128px !important;
+}
+
+#top-brand {
+  width: 65px !important;
+  height: 65px !important;
+  background: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark-Old/dev/images/logos/grey_logo_(65x65).png") no-repeat !important;
+}
+#top-brand img {
+  visibility: hidden !important;
+}
+
+header#top-nav #top-brand .bottom-wrapper {
+  overflow: hidden !important;
+  position: static !important;
+  bottom: 0 !important;
+  z-index: -1 !important;
+  width: 65px !important;
+  height: 1px !important;
+}
+header#top-nav #top-brand .bottom-wrapper .bottom {
+  background: none !important;
+}
+
+.no-touch header#top-nav:hover #top-brand .bottom-wrapper .bottom {
+  background: none !important;
+}
+
+.trakt-full {
+  border-bottom: none !important;
+  height: 65px !important;
+  background: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark-Old/dev/images/logos/light_grey_logo_(65x65).png") no-repeat !important;
+}
+.trakt-full img {
+  visibility: hidden !important;
+}
+
+#main-search .inner {
+  background: url("https://raw.githubusercontent.com/StylusThemes/Trakt-Dark-Old/dev/images/logos/footer_search_logo.png") left center no-repeat !important;
+}
+
+#header-search {
+  border: 1px solid #000102 !important;
+  color: #888 !important;
+  background: #2c2c33 !important;
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75) !important;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75) !important;
+}
+#header-search:hover {
+  border: 1px solid #000102 !important;
+  color: #888 !important;
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75) !important;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75) !important;
+}
+
+header#top-nav #header-search #header-search-button.btn-primary {
+  border: 1px solid #000102 !important;
+  color: #888 !important;
+  background: #2c2c33 !important;
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75) !important;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75) !important;
+}
+header#top-nav #header-search #header-search-button.btn-primary:hover {
+  border: 1px solid #000102 !important;
+  color: #888 !important;
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75) !important;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75) !important;
+}
+header#top-nav #header-search #header-search-query.open {
+  color: #888 !important;
+  background: transparent !important;
+}
+header#top-nav #header-search #header-search-query {
+  color: #888 !important;
+  background: transparent !important;
+}
+header#top-nav #header-search #header-search-type.shown .dropdown-toggle {
+  border-left: transparent !important;
+  color: #888 !important;
+  background: transparent !important;
+}
+header#top-nav #header-search #header-search-type.shown .dropdown-menu {
+  background: #2c2c33 !important;
+}
+header#top-nav #header-search #header-search-type a {
+  color: #888 !important;
+  background: #2c2c33 !important;
+  cursor: pointer !important;
+}
+header#top-nav #header-search #header-search-type a:hover {
+  color: #ed1c24 !important;
+  background: #2c2c33 !important;
+}
+
+#user-menu {
+  background: rgba(29, 30, 34, 0.65) !important;
+}
+
+.no-touch header#top-nav {
+  background: rgba(29, 30, 34, 0.65) !important;
+}
+.no-touch header#top-nav:hover {
+  background: rgba(29, 30, 34, 0.65) !important;
+}
+
+#network-wrapper .posters .poster {
+  border: 0;
+}
+#network-wrapper .posters .poster-under {
+  background-color: #2a2a31;
+}
+#network-wrapper .posters .poster-under .text {
+  color: #fff;
+}
+#network-wrapper .posters .poster-under .user-avatar img {
+  background-color: #888;
+  border-color: #000102;
+}
+#network-wrapper .posters .action {
+  border-color: #000102;
+}
+#network-wrapper .posters .activity-date {
+  background-color: #2a2a31;
+  color: #fff;
+}
+#network-wrapper a:not(.username) {
+  color: #fff;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #333 !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px !important;
+  height: 10px !important;
+  background-color: #333 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px !important;
+  background: #555 !important;
+}
+
+body {
+  color: #fff !important;
+}
+
+.grid-item .titles-link {
+  color: #fff !important;
+}

@@ -1,0 +1,7 @@
+/*::: Hide Ads :::*/
+[class*=e20df-grid-item],
+[id*=e20df-content-page],
+[id*=e20df-f8539-wrapper],
+[id*=e20df-f8539-ea1ac] {
+  display: none!important;
+}

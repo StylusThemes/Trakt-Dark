@@ -1,0 +1,38 @@
+// Friends Activity
+#network-wrapper {
+  .posters {
+    .poster {
+      border: 0;
+    }
+
+    .poster-under {
+      background-color: $altbg;
+
+      .text {
+        color: $white;
+      }
+
+      .user-avatar {
+        img {
+          background-color: $grey;
+          border-color: $border;
+        }
+      }
+    }
+
+    .action {
+      border-color: $border;
+    }
+
+    .activity-date {
+      background-color: $altbg;
+      color: $white;
+    }
+  }
+
+  a {
+    &:not(.username) {
+      color: $white;
+    }
+  }
+}

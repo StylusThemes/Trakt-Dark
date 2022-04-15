@@ -1,14 +1,55 @@
 /* ==UserStyle==
-@name         template
-@version      0.0.0
-@description  template
+@name         Trakt Dark
+@version      0.0.1
+@description  Dark Knight for free
 @namespace    https://github.com/StylusThemes
 @author       StylusThemes <https://github.com/StylusThemes>
-@homepageURL  https://github.com/StylusThemes/.Template
-@supportURL   https://github.com/StylusThemes/.Template/issues/
-@updateURL    https://raw.githubusercontent.com/StylusThemes/.Template/master/style.user.css
+@homepageURL  https://github.com/StylusThemes/Trakt-Dark
+@supportURL   https://github.com/StylusThemes/Trakt-Dark/issues/
+@updateURL    https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/master/style.user.css
 @license      CC-BY-SA-4.0
+
+@advanced dropdown Ads "Hide Ads?" {
+ADSY "Yes" <<<EOT
+{{hide-ads}} EOT;
+ADSN "No" <<<EOT
+ EOT;
+}
+
+@advanced dropdown VIP "Hide VIP Stuff?" {
+VIPN "No" <<<EOT
+ EOT;
+VIPY "Yes" <<<EOT
+{{hide-vip}} EOT;
+}
+
+@advanced dropdown WATCHNOW "Hide watch Now?" {
+WnN "No" <<<EOT
+ EOT;
+WnY "Yes" <<<EOT
+{{hide-watch-now}} EOT;
+}
+
+@advanced text USERID "UserID [see my GitHub for info]" ""
+@advanced text IMGURL "Custom imgURL" ""
+
+@advanced dropdown PROFILEBACKGROUND "Profile Background" {
+PFBGN "Default Background" <<<EOT
+ EOT;
+PFBGY "Last Watched [requires UserID]" <<<EOT
+{{last-watched-bg}} EOT;
+PFBGC "Custom [requires Custom imgURL]" <<<EOT
+{{custom-bg}} EOT;
+}
 ==/UserStyle== */
-@-moz-document domain("example.com") {
+@-moz-document regexp("https?://trakt.tv/.*") {
 {{theme}}
+/*[[Ads]]*/
+/*[[VIP]]*/
+/*[[WATCHNOW]]*/
+/*[[PROFILEBACKGROUND]]*/
+}
+
+@-moz-document regexp("https?://trakt.tv/.*") {
+  {{dark-knight-theme}}
 }

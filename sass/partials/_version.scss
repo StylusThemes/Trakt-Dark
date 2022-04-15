@@ -1,1 +1,7 @@
-// template Version
+// Trakt Dark Version
+[class="trakt"] {
+  &::after {
+    white-space: pre !important;
+    content: "\A                Trakt Dark Ver. 0.0.1" !important;
+  }
+}

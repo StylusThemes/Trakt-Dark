@@ -1,0 +1,43 @@
+// actor hover tooltips
+#info-wrapper {
+  .info {
+    #actors {
+      .posters {
+        ul {
+          li {
+            .character {
+              color: $white !important;
+            }
+          }
+
+          &:hover {
+            li {
+              .titles {
+                .name {
+                  color: $white !important;
+                  opacity: 1 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.tooltip-inner {
+  border: 1px solid $border !important;
+  color: $white !important;
+  background-color: $bg !important;
+}
+
+.tooltip {
+  .alt {
+    color: $white !important;
+  }
+
+  .alt2 {
+    color: $whitedark !important;
+  }
+}

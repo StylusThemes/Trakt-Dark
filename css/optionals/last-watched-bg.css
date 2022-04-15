@@ -1,0 +1,23 @@
+/*::: last watched background :::*/
+.is-self #cover-wrapper .full-bg {
+  background-image: url("https://widgets.trakt.tv/users//*[[USERID]]*\//watched/fanart@2x.jpg?image_only=1") !important;
+  background-position: 50% 10% !important;
+  background-size: cover !important;
+  opacity: .8 !important;
+  transition: none !important;
+}
+
+#results-top-wrapper .poster-bg {
+  background-image: url("https://widgets.trakt.tv/users//*[[USERID]]*\//watched/fanart@2x.jpg?image_only=1") !important;
+  background-position: 50% 10% !important;
+  background-size: cover !important;
+  opacity: .8 !important;
+  transition: none !important;
+
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+
+#cover-wrapper .shade {
+  display: none !important;
+}

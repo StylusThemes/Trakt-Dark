@@ -1,0 +1,65 @@
+// Header Search
+#header-search {
+  border: 1px solid $border !important;
+  color: $grey !important;
+  background: $altbg2 !important;
+  box-shadow: 1px 1px 5px 1px $transparent2 !important;
+
+  &:hover {
+    border: 1px solid $border !important;
+    color: $grey !important;
+    box-shadow: 1px 1px 5px 1px $transparent2 !important;
+  }
+}
+
+header#top-nav {
+  #header-search {
+    #header-search-button.btn-primary {
+      border: 1px solid $border !important;
+      color: $grey !important;
+      background: $altbg2 !important;
+      box-shadow: 1px 1px 5px 1px $transparent2 !important;
+
+      &:hover {
+        border: 1px solid $border !important;
+        color: $grey !important;
+        box-shadow: 1px 1px 5px 1px $transparent2 !important;
+      }
+    }
+
+    #header-search-query.open {
+      color: $grey !important;
+      background: transparent !important;
+    }
+
+    #header-search-query {
+      color: $grey !important;
+      background: transparent !important;
+    }
+
+    #header-search-type.shown {
+      .dropdown-toggle {
+        border-left: transparent !important;
+        color: $grey !important;
+        background: transparent !important;
+      }
+
+      .dropdown-menu {
+        background: $altbg2 !important;
+      }
+    }
+
+    #header-search-type {
+      a {
+        color: $grey !important;
+        background: $altbg2 !important;
+        cursor: pointer !important;
+
+        &:hover {
+          color: $red !important;
+          background: $altbg2 !important;
+        }
+      }
+    }
+  }
+}

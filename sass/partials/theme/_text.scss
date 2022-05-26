@@ -8,3 +8,11 @@ body {
     color: $white !important;
   }
 }
+
+#info-wrapper {
+  .info {
+    [data-readmore-toggle] {
+      display: unset !important;
+    }
+  }
+}

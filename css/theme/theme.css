@@ -1,6 +1,6 @@
 [class=trakt]::after {
   white-space: pre !important;
-  content: "\a                Trakt Dark Ver. 0.0.3" !important;
+  content: "\a                Trakt Dark Ver. 0.0.4" !important;
 }
 
 #info-wrapper .info #actors .posters ul li .character {
@@ -188,4 +188,8 @@ body {
 
 .grid-item .titles-link {
   color: #fff !important;
+}
+
+#info-wrapper .info [data-readmore-toggle] {
+  display: unset !important;
 }

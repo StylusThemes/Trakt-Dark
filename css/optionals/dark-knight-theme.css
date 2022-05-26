@@ -1,5 +1,4 @@
-/* Regex (\w+)?.signed-in-vip.(\w+(-)?\w+)\.?(\w+) */
-/* Lines 43523 to 44952 */
+/* Regex .signed-in-vip.(\w+(-)?\w+) */
 
 #user-menu ul li a .icon {
   opacity: 1 !important;
@@ -540,7 +539,9 @@ ul.pagination li .gap a {
   color: #fff !important;
 }
 
-.popover.copy-list li:nth-child(3) {
+.popover.copy-list li:nth-child(2),
+.popover.copy-list li:nth-child(3),
+.popover.copy-list li:nth-child(4) {
   border-color: #444 !important;
 }
 
@@ -987,17 +988,17 @@ body.list_comments #info-wrapper .info #read .comment-wrapper .comment pre {
   background-color: #161616 !important;
 }
 
-.custom-list .list-info .posters .poster-items-wrapper .poster-items .poster-item {
+.personal-list .list-info .posters .poster-items-wrapper .poster-items .poster-item {
   -webkit-box-shadow: 0 0 15px #333 !important;
   box-shadow: 0 0 15px #333 !important;
 }
 
-.custom-list .list-info .user-actions .icon.btn-list-subscribe,
-.custom-list .list-info .btn-list-progress {
+.personal-list .list-info .user-actions .icon.btn-list-subscribe,
+.personal-list .list-info .btn-list-progress {
   color: #eee !important;
 }
 
-.custom-list .info .overview[data-readmore][aria-expanded="false"] .shade {
+.personal-list .info .overview[data-readmore][aria-expanded="false"] .shade {
   background-image: -webkit-linear-gradient(top, rgba(29, 29, 29, 0) 0%, #1d1d1d 100%) !important;
   background-image: -o-linear-gradient(top, rgba(29, 29, 29, 0) 0%, #1d1d1d 100%) !important;
   background-image: linear-gradient(to bottom, rgba(29, 29, 29, 0) 0%, #1d1d1d 100%) !important;
@@ -1014,7 +1015,7 @@ ul.lists li:not(.selected) {
   color: #eee !important;
 }
 
-.custom-list .list-info .info .overview blockquote {
+.personal-list .list-info .info .overview blockquote {
   background-color: #333 !important;
 }
 
@@ -1026,6 +1027,14 @@ ul.lists li:not(.selected) {
 
 #sortable-watchnow-applied-filters {
   background-color: #222 !important;
+}
+
+.cloned-from {
+  color: #777 !important;
+}
+
+.cloned-from .trakt-icon-copy {
+  color: #aaa !important;
 }
 
 #progress-wrapper .row .main-info .seasons {

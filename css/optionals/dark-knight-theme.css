@@ -994,7 +994,7 @@ body.list_comments #info-wrapper .info #read .comment-wrapper .comment pre {
 }
 
 .personal-list .list-info .user-actions .icon.btn-list-subscribe,
-.personal-list .list-info .btn-list-progress {
+.personal-list .list-info .icon.btn-list-progress {
   color: #eee !important;
 }
 
@@ -1193,6 +1193,68 @@ body.branding #api-wrapper {
   background: radial-gradient(center, circle cover, #333 0%, #161616 100%) !important;
 }
 
+body.settings .notifications-table .table.with-header th,
+body.authorized_applications .notifications-table .table.with-header th,
+body.applications .notifications-table .table.with-header th,
+body.widgets .notifications-table .table.with-header th,
+body.movies.releases .notifications-table .table.with-header th {
+  border-color: #444 !important;
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
+body.settings .notifications-table .table tbody > tr,
+body.authorized_applications .notifications-table .table tbody > tr,
+body.applications .notifications-table .table tbody > tr,
+body.widgets .notifications-table .table tbody > tr,
+body.movies.releases .notifications-table .table tbody > tr {
+  background-color: #161616 !important;
+}
+
+body.settings .notifications-table .table tbody > tr > td,
+body.authorized_applications .notifications-table .table tbody > tr > td,
+body.applications .notifications-table .table tbody > tr > td,
+body.widgets .notifications-table .table tbody > tr > td,
+body.movies.releases .notifications-table .table tbody > tr > td {
+  border-top-color: #444 !important;
+}
+
+body.settings .notifications-table .table tbody > tr:hover,
+body.authorized_applications .notifications-table .table tbody > tr:hover,
+body.applications .notifications-table .table tbody > tr:hover,
+body.widgets .notifications-table .table tbody > tr:hover,
+body.movies.releases .notifications-table .table tbody > tr:hover {
+  background-color: #292929 !important;
+}
+
+body.settings .panel,
+body.authorized_applications .panel,
+body.applications .panel,
+body.widgets .panel,
+body.movies.releases .panel {
+  border-color: #444 !important;
+  background-color: #161616 !important;
+}
+
+body.settings .panel .panel-heading,
+body.authorized_applications .panel .panel-heading,
+body.applications .panel .panel-heading,
+body.widgets .panel .panel-heading,
+body.movies.releases .panel .panel-heading {
+  border-color: #444 !important;
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
+body.settings .panel .panel-body .alert-cookie-disabled,
+body.authorized_applications .panel .panel-body .alert-cookie-disabled,
+body.applications .panel .panel-body .alert-cookie-disabled,
+body.widgets .panel .panel-body .alert-cookie-disabled,
+body.movies.releases .panel .panel-body .alert-cookie-disabled {
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
 body.settings section#main-settings #info-wrapper .sidebar .sections li:first-child,
 body.settings section#hidden-items #info-wrapper .sidebar .sections li:first-child,
 body.authorized_applications section#main-settings #info-wrapper .sidebar .sections li:first-child,
@@ -1224,20 +1286,6 @@ body.authorized_applications h3.help-text,
 body.applications h3.help-text,
 body.widgets h3.help-text {
   color: #999 !important;
-}
-
-body.settings .notifications-table .table tbody > tr > td,
-body.authorized_applications .notifications-table .table tbody > tr > td,
-body.applications .notifications-table .table tbody > tr > td,
-body.widgets .notifications-table .table tbody > tr > td {
-  border-top-color: #444 !important;
-}
-
-body.settings .notifications-table .table tbody > tr:hover,
-body.authorized_applications .notifications-table .table tbody > tr:hover,
-body.applications .notifications-table .table tbody > tr:hover,
-body.widgets .notifications-table .table tbody > tr:hover {
-  background-color: #292929 !important;
 }
 
 body.settings #social-connections,
@@ -1273,22 +1321,6 @@ body.settings #widgets-wrapper .widget-row .code-wrapper code,
 body.authorized_applications #widgets-wrapper .widget-row .code-wrapper code,
 body.applications #widgets-wrapper .widget-row .code-wrapper code,
 body.widgets #widgets-wrapper .widget-row .code-wrapper code {
-  background-color: #333 !important;
-  color: #fff !important;
-}
-
-.panel {
-  border-color: #444 !important;
-  background-color: #161616 !important;
-}
-
-.panel .panel-heading {
-  border-color: #444 !important;
-  background-color: #333 !important;
-  color: #fff !important;
-}
-
-.panel .panel-body .alert-cookie-disabled {
   background-color: #333 !important;
   color: #fff !important;
 }
@@ -1615,7 +1647,8 @@ body.watchnow .streaming-links-wrapper .streaming-links {
 }
 
 #moderate-modal .streaming-links.split-bg,
-#metadata-merge-modal .streaming-links.split-bg {
+#metadata-merge-modal .streaming-links.split-bg,
+#metadata-move-modal .streaming-links.split-bg {
   background-image: linear-gradient(to right, transparent, transparent 48%, #111 48%, #1d1d1d) !important;
   border-bottom: solid 1px #444 !important;
 }

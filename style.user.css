@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Trakt Dark
-@version      0.0.4
+@version      0.0.5
 @description  Dark Knight for free
 @namespace    https://github.com/StylusThemes
 @author       StylusThemes <https://github.com/StylusThemes>
@@ -45,7 +45,7 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
 @-moz-document regexp("https?://trakt.tv/.*") {
   [class=trakt]::after {
     white-space: pre !important;
-    content: "\a                Trakt Dark Ver. 0.0.4" !important;
+    content: "\a                Trakt Dark Ver. 0.0.5" !important;
   }
 
   #info-wrapper .info #actors .posters ul li .character {
@@ -1253,7 +1253,7 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
     box-shadow: 0 0 15px #333 !important
   }
 
-  .personal-list .list-info .btn-list-progress,
+  .personal-list .list-info .icon.btn-list-progress,
   .personal-list .list-info .user-actions .icon.btn-list-subscribe {
     color: #eee !important
   }
@@ -1452,6 +1452,68 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
     background: radial-gradient(center, circle cover, #333 0, #161616 100%) !important
   }
 
+  body.applications .notifications-table .table.with-header th,
+  body.authorized_applications .notifications-table .table.with-header th,
+  body.movies.releases .notifications-table .table.with-header th,
+  body.settings .notifications-table .table.with-header th,
+  body.widgets .notifications-table .table.with-header th {
+    border-color: #444 !important;
+    background-color: #333 !important;
+    color: #fff !important
+  }
+
+  body.applications .notifications-table .table tbody>tr,
+  body.authorized_applications .notifications-table .table tbody>tr,
+  body.movies.releases .notifications-table .table tbody>tr,
+  body.settings .notifications-table .table tbody>tr,
+  body.widgets .notifications-table .table tbody>tr {
+    background-color: #161616 !important
+  }
+
+  body.applications .notifications-table .table tbody>tr>td,
+  body.authorized_applications .notifications-table .table tbody>tr>td,
+  body.movies.releases .notifications-table .table tbody>tr>td,
+  body.settings .notifications-table .table tbody>tr>td,
+  body.widgets .notifications-table .table tbody>tr>td {
+    border-top-color: #444 !important
+  }
+
+  body.applications .notifications-table .table tbody>tr:hover,
+  body.authorized_applications .notifications-table .table tbody>tr:hover,
+  body.movies.releases .notifications-table .table tbody>tr:hover,
+  body.settings .notifications-table .table tbody>tr:hover,
+  body.widgets .notifications-table .table tbody>tr:hover {
+    background-color: #292929 !important
+  }
+
+  body.applications .panel,
+  body.authorized_applications .panel,
+  body.movies.releases .panel,
+  body.settings .panel,
+  body.widgets .panel {
+    border-color: #444 !important;
+    background-color: #161616 !important
+  }
+
+  body.applications .panel .panel-heading,
+  body.authorized_applications .panel .panel-heading,
+  body.movies.releases .panel .panel-heading,
+  body.settings .panel .panel-heading,
+  body.widgets .panel .panel-heading {
+    border-color: #444 !important;
+    background-color: #333 !important;
+    color: #fff !important
+  }
+
+  body.applications .panel .panel-body .alert-cookie-disabled,
+  body.authorized_applications .panel .panel-body .alert-cookie-disabled,
+  body.movies.releases .panel .panel-body .alert-cookie-disabled,
+  body.settings .panel .panel-body .alert-cookie-disabled,
+  body.widgets .panel .panel-body .alert-cookie-disabled {
+    background-color: #333 !important;
+    color: #fff !important
+  }
+
   body.applications section#hidden-items #info-wrapper .sidebar .sections li:first-child,
   body.applications section#main-settings #info-wrapper .sidebar .sections li:first-child,
   body.authorized_applications section#hidden-items #info-wrapper .sidebar .sections li:first-child,
@@ -1483,20 +1545,6 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
   body.settings h3.help-text,
   body.widgets h3.help-text {
     color: #999 !important
-  }
-
-  body.applications .notifications-table .table tbody>tr>td,
-  body.authorized_applications .notifications-table .table tbody>tr>td,
-  body.settings .notifications-table .table tbody>tr>td,
-  body.widgets .notifications-table .table tbody>tr>td {
-    border-top-color: #444 !important
-  }
-
-  body.applications .notifications-table .table tbody>tr:hover,
-  body.authorized_applications .notifications-table .table tbody>tr:hover,
-  body.settings .notifications-table .table tbody>tr:hover,
-  body.widgets .notifications-table .table tbody>tr:hover {
-    background-color: #292929 !important
   }
 
   body.applications #social-connections,
@@ -1532,22 +1580,6 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
   body.authorized_applications #widgets-wrapper .widget-row .code-wrapper code,
   body.settings #widgets-wrapper .widget-row .code-wrapper code,
   body.widgets #widgets-wrapper .widget-row .code-wrapper code {
-    background-color: #333 !important;
-    color: #fff !important
-  }
-
-  .panel {
-    border-color: #444 !important;
-    background-color: #161616 !important
-  }
-
-  .panel .panel-heading {
-    border-color: #444 !important;
-    background-color: #333 !important;
-    color: #fff !important
-  }
-
-  .panel .panel-body .alert-cookie-disabled {
     background-color: #333 !important;
     color: #fff !important
   }
@@ -1874,6 +1906,7 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
   }
 
   #metadata-merge-modal .streaming-links.split-bg,
+  #metadata-move-modal .streaming-links.split-bg,
   #moderate-modal .streaming-links.split-bg {
     background-image: linear-gradient(to right, transparent, transparent 48%, #111 48%, #1d1d1d) !important;
     border-bottom: solid 1px #444 !important

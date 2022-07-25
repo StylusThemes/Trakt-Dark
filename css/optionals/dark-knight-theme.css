@@ -1,4 +1,4 @@
-/* Regex .signed-in-vip.(\w+(-)?\w+) */
+/* Regex body.dark-knight\s */
 
 #user-menu ul li a .icon {
   opacity: 1 !important;
@@ -128,6 +128,10 @@ hr {
   color: #000 !important;
 }
 
+ul.lists li .info .privacy {
+  background-color: #555 !important;
+}
+
 .subnav-wrapper {
   background-color: #161616 !important;
 }
@@ -142,6 +146,10 @@ hr {
 
 .subnav-wrapper .left h2 .right a {
   color: #eee !important;
+}
+
+.subnav-wrapper .left h2 .pill {
+  background-color: #555 !important;
 }
 
 .subnav-wrapper.list-title-wrapper {
@@ -828,6 +836,18 @@ ul.pagination li .gap a {
   color: #eee !important;
 }
 
+.comment-wrapper .pill {
+  background-color: #555 !important;
+}
+
+.comment-wrapper .pill.collaborators {
+  background-color: #e85d04 !important;
+}
+
+.comment-wrapper .pill.op {
+  background-color: #009edf !important;
+}
+
 .comment-wrapper.list:not(.subnav) {
   background-color: #333 !important;
   padding-bottom: 0 !important;
@@ -955,14 +975,18 @@ body.list_comments #info-wrapper .info #read .comment-wrapper .comment pre {
 #comments .tab-links a:not(.active) h3,
 #replies .tab-links a:not(.active) h3,
 #credits .tab-links a:not(.active) h3,
-#actors .tab-links a:not(.active) h3 {
+#actors .tab-links a:not(.active) h3,
+#crew .tab-links a:not(.active) h3,
+#lists .tab-links a:not(.active) h3 {
   color: #ccc !important;
 }
 
 #comments .tab-links a:not(.active) h3:hover .count,
 #replies .tab-links a:not(.active) h3:hover .count,
 #credits .tab-links a:not(.active) h3:hover .count,
-#actors .tab-links a:not(.active) h3:hover .count {
+#actors .tab-links a:not(.active) h3:hover .count,
+#crew .tab-links a:not(.active) h3:hover .count,
+#lists .tab-links a:not(.active) h3:hover .count {
   border-color: #fff !important;
   background-color: transparent !important;
   color: #fff !important;
@@ -971,14 +995,18 @@ body.list_comments #info-wrapper .info #read .comment-wrapper .comment pre {
 #comments .tab-links a h3:hover,
 #replies .tab-links a h3:hover,
 #credits .tab-links a h3:hover,
-#actors .tab-links a h3:hover {
+#actors .tab-links a h3:hover,
+#crew .tab-links a h3:hover,
+#lists .tab-links a h3:hover {
   color: #fff !important;
 }
 
 #comments .tab-links a h3:hover .count,
 #replies .tab-links a h3:hover .count,
 #credits .tab-links a h3:hover .count,
-#actors .tab-links a h3:hover .count {
+#actors .tab-links a h3:hover .count,
+#crew .tab-links a h3:hover .count,
+#lists .tab-links a h3:hover .count {
   border-color: #fff !important;
   background-color: #fff !important;
   color: #000 !important;

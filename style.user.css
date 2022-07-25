@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Trakt Dark
-@version      0.0.5
+@version      0.0.6
 @description  Dark Knight for free
 @namespace    https://github.com/StylusThemes
 @author       StylusThemes <https://github.com/StylusThemes>
@@ -45,7 +45,7 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
 @-moz-document regexp("https?://trakt.tv/.*") {
   [class=trakt]::after {
     white-space: pre !important;
-    content: "\a                Trakt Dark Ver. 0.0.5" !important;
+    content: "\a                Trakt Dark Ver. 0.0.6" !important;
   }
 
   #info-wrapper .info #actors .posters ul li .character {
@@ -394,6 +394,10 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
     color: #000 !important
   }
 
+  ul.lists li .info .privacy {
+    background-color: #555 !important
+  }
+
   .subnav-wrapper {
     background-color: #161616 !important
   }
@@ -408,6 +412,10 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
 
   .subnav-wrapper .left h2 .right a {
     color: #eee !important
+  }
+
+  .subnav-wrapper .left h2 .pill {
+    background-color: #555 !important
   }
 
   .subnav-wrapper.list-title-wrapper {
@@ -1089,6 +1097,18 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
     color: #eee !important
   }
 
+  .comment-wrapper .pill {
+    background-color: #555 !important
+  }
+
+  .comment-wrapper .pill.collaborators {
+    background-color: #e85d04 !important
+  }
+
+  .comment-wrapper .pill.op {
+    background-color: #009edf !important
+  }
+
   .comment-wrapper.list:not(.subnav) {
     background-color: #333 !important;
     padding-bottom: 0 !important
@@ -1215,6 +1235,8 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
   #actors .tab-links a:not(.active) h3,
   #comments .tab-links a:not(.active) h3,
   #credits .tab-links a:not(.active) h3,
+  #crew .tab-links a:not(.active) h3,
+  #lists .tab-links a:not(.active) h3,
   #replies .tab-links a:not(.active) h3 {
     color: #ccc !important
   }
@@ -1222,6 +1244,8 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
   #actors .tab-links a:not(.active) h3:hover .count,
   #comments .tab-links a:not(.active) h3:hover .count,
   #credits .tab-links a:not(.active) h3:hover .count,
+  #crew .tab-links a:not(.active) h3:hover .count,
+  #lists .tab-links a:not(.active) h3:hover .count,
   #replies .tab-links a:not(.active) h3:hover .count {
     border-color: #fff !important;
     background-color: transparent !important;
@@ -1231,6 +1255,8 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
   #actors .tab-links a h3:hover,
   #comments .tab-links a h3:hover,
   #credits .tab-links a h3:hover,
+  #crew .tab-links a h3:hover,
+  #lists .tab-links a h3:hover,
   #replies .tab-links a h3:hover {
     color: #fff !important
   }
@@ -1238,6 +1264,8 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
   #actors .tab-links a h3:hover .count,
   #comments .tab-links a h3:hover .count,
   #credits .tab-links a h3:hover .count,
+  #crew .tab-links a h3:hover .count,
+  #lists .tab-links a h3:hover .count,
   #replies .tab-links a h3:hover .count {
     border-color: #fff !important;
     background-color: #fff !important;

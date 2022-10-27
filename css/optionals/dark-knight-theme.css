@@ -26,6 +26,16 @@ hr {
   border-color: #000 !important;
 }
 
+.posters .added-by .user-avatar img,
+.fanarts .added-by .user-avatar img {
+  border-color: #000 !important;
+}
+
+.posters .added-by.plus-more,
+.fanarts .added-by.plus-more {
+  border-color: #000 !important;
+}
+
 .modal-backdrop.blur.fade.in {
   opacity: 0.8 !important;
 }
@@ -46,6 +56,12 @@ hr {
 #auth-form-wrapper,
 .checkin-modal {
   background-color: #1d1d1d !important;
+}
+
+#auth-form-wrapper .screenshot .fanart,
+.checkin-modal .screenshot .fanart {
+  border-top-color: #444 !important;
+  border-bottom-color: #444 !important;
 }
 
 #auth-form-wrapper .accept-terms,
@@ -185,8 +201,8 @@ h2.with-line {
   border-bottom-color: #444 !important;
 }
 
-.e20df-a37d6-info,
-.e20df-a37d6-label {
+.e1a979-cc189c-info,
+.e1a979-cc189c-label {
   background-color: #1d1d1d !important;
   color: #999 !important;
   border-color: #999 !important;
@@ -599,18 +615,18 @@ ul.pagination li .gap a {
   background-color: #161616 !important;
 }
 
-#ondeck-wrapper {
-  background-color: #1d1d1d !important;
-}
-
-#ondeck-wrapper .page-navigator {
+.page-navigator {
   border: solid 1px #333 !important;
   background-color: #111 !important;
 }
 
-#ondeck-wrapper .page-navigator > div:hover {
+.page-navigator > div:hover {
   color: #ed1c24 !important;
   opacity: 1 !important;
+}
+
+#ondeck-wrapper {
+  background-color: #1d1d1d !important;
 }
 
 #ondeck-shows .ignore:hover,
@@ -1154,12 +1170,7 @@ body.apps #apps-icon-wrapper {
   background: radial-gradient(center, circle cover, #161616 0%, #1d1d1d 100%) !important;
 }
 
-body.apps #apps-icon-wrapper .apps-icons #iphone .app .icon,
-body.apps #apps-icon-wrapper .apps-icons #ipad .app .icon,
-body.apps #apps-icon-wrapper .apps-icons #applewatch .app .icon,
-body.apps #apps-icon-wrapper .apps-icons #appletv .app .icon,
-body.apps #apps-icon-wrapper .apps-icons #windowsphone .app .icon,
-body.apps #apps-icon-wrapper .apps-icons #mac .app .icon {
+body.apps #apps-icon-wrapper .apps-icons .app .icon {
   -webkit-box-shadow: 0 0 10px #000 !important;
   box-shadow: 0 0 10px #000 !important;
 }

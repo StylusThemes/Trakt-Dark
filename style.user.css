@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Trakt Dark
-@version      0.0.8
+@version      0.0.9
 @description  Dark Knight for free
 @namespace    https://github.com/StylusThemes
 @author       StylusThemes <https://github.com/StylusThemes>
@@ -45,7 +45,7 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
 @-moz-document regexp("https?://trakt.tv/.*") {
   [class=trakt]::after {
     white-space: pre !important;
-    content: "\a                Trakt Dark Ver. 0.0.8" !important;
+    content: "\a                Trakt Dark Ver. 0.0.9" !important;
   }
 
   #info-wrapper .info #actors .posters ul li .character {
@@ -294,12 +294,19 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
 
   .fanarts .added-by .user-avatar img,
   .posters .added-by .user-avatar img {
-    border-color: #000 !important
+    border-color: #1d1d1d !important
   }
 
   .fanarts .added-by.plus-more,
   .posters .added-by.plus-more {
-    border-color: #000 !important
+    border-color: #1d1d1d !important
+  }
+
+  .fanarts .rewatching-badge,
+  .posters .rewatching-badge {
+    border-color: #1d1d1d !important;
+    background: #333 !important;
+    color: #aaa !important
   }
 
   .modal-backdrop.blur.fade.in {
@@ -402,7 +409,9 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
     color: #aaa !important
   }
 
-  .label-vip.light-bg .years .fa {
+  .label-vip.light-bg .years .fa,
+  .label-vip.light-bg .years [class*=" fa-"],
+  .label-vip.light-bg .years [class^=fa-] {
     color: #ccc !important
   }
 
@@ -624,7 +633,7 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
     color: #ccc !important
   }
 
-  @media (max-width:767px) {
+  @media(max-width:767px) {
     header#top-nav #header-search #header-search-query {
       padding-top: 11px !important;
       padding-bottom: 11px !important
@@ -849,6 +858,10 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
     border-color: #444 !important
   }
 
+  .popover .popover-search-wrapper {
+    background-color: #222 !important
+  }
+
   .xdsoft_datetimepicker .xdsoft_label i,
   .xdsoft_datetimepicker .xdsoft_next,
   .xdsoft_datetimepicker .xdsoft_prev,
@@ -893,8 +906,14 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
     background-color: #1d1d1d !important
   }
 
+  #ondeck-wrapper .posters .rewatching-badge {
+    border-color: #1d1d1d !important
+  }
+
   #ondeck-shows .ignore:hover,
-  #progress-grid-wrapper .ignore:hover {
+  #ondeck-shows .reset:hover,
+  #progress-grid-wrapper .ignore:hover,
+  #progress-grid-wrapper .reset:hover {
     color: #fff !important
   }
 
@@ -1356,7 +1375,7 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
     background-color: #333 !important
   }
 
-  @media (max-width:767px) {
+  @media(max-width:767px) {
     body.lists #info-wrapper .comment-wrapper {
       border-top: none !important
     }
@@ -1382,7 +1401,9 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
     color: #eee !important
   }
 
-  #progress-wrapper .row .main-info .seasons>div .season-toggle .fa {
+  #progress-wrapper .row .main-info .seasons>div .season-toggle .fa,
+  #progress-wrapper .row .main-info .seasons>div .season-toggle [class*=" fa-"],
+  #progress-wrapper .row .main-info .seasons>div .season-toggle [class^=fa-] {
     color: #fff !important
   }
 
@@ -1390,7 +1411,9 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
     color: #fff !important
   }
 
-  #progress-wrapper .row .main-info .seasons .link .fa {
+  #progress-wrapper .row .main-info .seasons .link .fa,
+  #progress-wrapper .row .main-info .seasons .link [class*=" fa-"],
+  #progress-wrapper .row .main-info .seasons .link [class^=fa-] {
     color: #fff !important
   }
 
@@ -1610,7 +1633,14 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
   body.settings h3.instructions,
   body.widgets h3.instructions {
     background-color: #000 !important;
-    border-bottom: solid 1px #444 !important
+    border-bottom-color: #444 !important
+  }
+
+  body.applications h3.instructions.middle,
+  body.authorized_applications h3.instructions.middle,
+  body.settings h3.instructions.middle,
+  body.widgets h3.instructions.middle {
+    border-top-color: #444 !important
   }
 
   body.applications h3.help-text,
@@ -1655,6 +1685,15 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
   body.widgets #widgets-wrapper .widget-row .code-wrapper code {
     background-color: #333 !important;
     color: #fff !important
+  }
+
+  body.applications code,
+  body.authorized_applications code,
+  body.settings code,
+  body.widgets code {
+    background-color: #3c1111 !important;
+    color: #fff !important;
+    border: none !important
   }
 
   #authorized-applications .row:not(:first-child):not(.no-border) {

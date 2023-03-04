@@ -28,16 +28,23 @@ hr {
 
 .posters .added-by .user-avatar img,
 .fanarts .added-by .user-avatar img {
-  border-color: #000 !important;
+  border-color: #1d1d1d !important;
 }
 
 .posters .added-by.plus-more,
 .fanarts .added-by.plus-more {
-  border-color: #000 !important;
+  border-color: #1d1d1d !important;
+}
+
+.posters .rewatching-badge,
+.fanarts .rewatching-badge {
+  border-color: #1d1d1d !important;
+  background: #333 !important;
+  color: #aaa !important;
 }
 
 .modal-backdrop.blur.fade.in {
-  opacity: 0.8 !important;
+  opacity: .8 !important;
 }
 
 .modal-content {
@@ -46,7 +53,7 @@ hr {
 
 .modal-content button.close {
   color: #fff !important;
-  opacity: 0.5 !important;
+  opacity: .5 !important;
 }
 
 .modal-content .modal-header {
@@ -136,7 +143,9 @@ hr {
   color: #aaa !important;
 }
 
-.label-vip.light-bg .years .fa {
+.label-vip.light-bg .years .fa,
+.label-vip.light-bg .years [class^=fa-],
+.label-vip.light-bg .years [class*=" fa-"] {
   color: #ccc !important;
 }
 
@@ -185,12 +194,12 @@ ul.lists li .info .privacy {
   background-color: #252525 !important;
 }
 
-.subnav-text .text[data-readmore][aria-expanded="false"] .shade {
+.subnav-text .text[data-readmore][aria-expanded=false] .shade {
   background-image: -webkit-linear-gradient(top, rgba(37, 37, 37, 0) 0%, #252525 100%) !important;
   background-image: -o-linear-gradient(top, rgba(37, 37, 37, 0) 0%, #252525 100%) !important;
   background-image: linear-gradient(to bottom, rgba(37, 37, 37, 0) 0%, #252525 100%) !important;
   background-repeat: repeat-x !important;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00252525',endColorstr='#FF252525',GradientType=0) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00252525', endColorstr='#FF252525', GradientType=0) !important;
 }
 
 .subnav-text .text blockquote {
@@ -326,7 +335,7 @@ h2.with-line {
   background-image: -o-linear-gradient(top, black 0%, rgba(100, 100, 100, 0.2) 100%) !important;
   background-image: linear-gradient(to bottom, black 0%, rgba(100, 100, 100, 0.2) 100%) !important;
   background-repeat: repeat-x !important;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF000000',endColorstr='#33646464',GradientType=0) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF000000', endColorstr='#33646464', GradientType=0) !important;
 }
 
 #main-search .inner {
@@ -360,7 +369,7 @@ header#top-nav #header-search #header-search-type a {
   color: #ccc !important;
 }
 
-@media (max-width: 767px) {
+@media(max-width: 767px) {
   header#top-nav #header-search #header-search-query {
     padding-top: 11px !important;
     padding-bottom: 11px !important;
@@ -398,7 +407,7 @@ header#top-nav #header-search #header-search-type a {
   color: #eee !important;
 }
 
-.form-signin .chosen-container .chosen-choices li.search-field input[type="text"] {
+.form-signin .chosen-container .chosen-choices li.search-field input[type=text] {
   color: #eee !important;
 }
 
@@ -585,6 +594,10 @@ ul.pagination li .gap a {
   border-color: #444 !important;
 }
 
+.popover .popover-search-wrapper {
+  background-color: #222 !important;
+}
+
 .xdsoft_datetimepicker .xdsoft_label i,
 .xdsoft_datetimepicker .xdsoft_prev,
 .xdsoft_datetimepicker .xdsoft_next,
@@ -629,8 +642,14 @@ ul.pagination li .gap a {
   background-color: #1d1d1d !important;
 }
 
+#ondeck-wrapper .posters .rewatching-badge {
+  border-color: #1d1d1d !important;
+}
+
 #ondeck-shows .ignore:hover,
-#progress-grid-wrapper .ignore:hover {
+#ondeck-shows .reset:hover,
+#progress-grid-wrapper .ignore:hover,
+#progress-grid-wrapper .reset:hover {
   color: #fff !important;
 }
 
@@ -764,7 +783,7 @@ ul.pagination li .gap a {
 }
 
 #info-wrapper .info .actors-wrapper .posters {
-  scrollbar-color: rgba(255, 255, 255, 0.1) rgba(100, 100, 100, 0.3) !important;
+  scrollbar-color: rgba(255, 255, 255, .1) rgba(100, 100, 100, .3) !important;
   scrollbar-width: thin !important;
 }
 
@@ -774,18 +793,18 @@ ul.pagination li .gap a {
 }
 
 #info-wrapper .info .actors-wrapper .posters::-webkit-scrollbar-track {
-  background: rgba(100, 100, 100, 0.3) !important;
+  background: rgba(100, 100, 100, .3) !important;
   border-radius: 3px !important;
 }
 
 #info-wrapper .info .actors-wrapper .posters::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.15) !important;
-  transition: all 0.5s !important;
+  background: rgba(255, 255, 255, .15) !important;
+  transition: all .5s !important;
   border-radius: 3px !important;
 }
 
 #info-wrapper .info .actors-wrapper .posters::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.4) !important;
+  background: rgba(255, 255, 255, .4) !important;
 }
 
 #info-wrapper .info .actors-wrapper .posters ul li .name {
@@ -797,19 +816,19 @@ ul.pagination li .gap a {
 }
 
 #info-wrapper .info .actors-wrapper .posters ul li:hover li .titles {
-  opacity: 0.3 !important;
+  opacity: .3 !important;
 }
 
 #info-wrapper .info .actors-wrapper .posters ul li:hover li .titles .name {
   color: #fff !important;
 }
 
-#info-wrapper .info #overview[data-readmore][aria-expanded="false"] .shade {
+#info-wrapper .info #overview[data-readmore][aria-expanded=false] .shade {
   background-image: -webkit-linear-gradient(top, rgba(29, 29, 29, 0) 0%, #1d1d1d 100%) !important;
   background-image: -o-linear-gradient(top, rgba(29, 29, 29, 0) 0%, #1d1d1d 100%) !important;
   background-image: linear-gradient(to bottom, rgba(29, 29, 29, 0) 0%, #1d1d1d 100%) !important;
   background-repeat: repeat-x !important;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#001D1D1D',endColorstr='#FF1D1D1D',GradientType=0) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#001D1D1D', endColorstr='#FF1D1D1D', GradientType=0) !important;
 }
 
 #info-wrapper .affiliate-links .section a {
@@ -858,24 +877,24 @@ ul.pagination li .gap a {
   background-color: #292929 !important;
 }
 
-#seasons-episodes-sortable .under-info .overview[data-readmore][aria-expanded="false"] .shade {
+#seasons-episodes-sortable .under-info .overview[data-readmore][aria-expanded=false] .shade {
   background-image: -webkit-linear-gradient(top, rgba(29, 29, 29, 0) 0%, #1d1d1d 100%) !important;
   background-image: -o-linear-gradient(top, rgba(29, 29, 29, 0) 0%, #1d1d1d 100%) !important;
   background-image: linear-gradient(to bottom, rgba(29, 29, 29, 0) 0%, #1d1d1d 100%) !important;
   background-repeat: repeat-x !important;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#001D1D1D',endColorstr='#FF1D1D1D',GradientType=0) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#001D1D1D', endColorstr='#FF1D1D1D', GradientType=0) !important;
 }
 
 .comment-wrapper {
   background-color: #292929 !important;
 }
 
-.comment-wrapper .comment-text[data-readmore][aria-expanded="false"] .shade {
+.comment-wrapper .comment-text[data-readmore][aria-expanded=false] .shade {
   background-image: -webkit-linear-gradient(top, rgba(41, 41, 41, 0) 0%, #292929 100%) !important;
   background-image: -o-linear-gradient(top, rgba(41, 41, 41, 0) 0%, #292929 100%) !important;
   background-image: linear-gradient(to bottom, rgba(41, 41, 41, 0) 0%, #292929 100%) !important;
   background-repeat: repeat-x !important;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00292929',endColorstr='#FF292929',GradientType=0) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00292929', endColorstr='#FF292929', GradientType=0) !important;
 }
 
 .comment-wrapper .above-comment {
@@ -945,8 +964,8 @@ ul.pagination li .gap a {
 
 .comment-wrapper.with-replies {
   outline: solid 1px #444 !important;
-  -webkit-box-shadow: 0 0 8px rgba(128, 128, 128, 0.6) !important;
-  box-shadow: 0 0 8px rgba(128, 128, 128, 0.6) !important;
+  -webkit-box-shadow: 0 0 8px rgba(128, 128, 128, .6) !important;
+  box-shadow: 0 0 8px rgba(128, 128, 128, .6) !important;
 }
 
 .comment-wrapper.with-replies .replies-wrapper .above-comment {
@@ -993,16 +1012,16 @@ body.list_comments #info-wrapper .above-comment-bg {
   background-color: #333 !important;
 }
 
-body.comments #info-wrapper .info #read .comment-wrapper .comment-text[data-readmore][aria-expanded="false"] .shade,
-body.comments_liked #info-wrapper .info #read .comment-wrapper .comment-text[data-readmore][aria-expanded="false"] .shade,
-body.comments_season #info-wrapper .info #read .comment-wrapper .comment-text[data-readmore][aria-expanded="false"] .shade,
-body.comments_episode #info-wrapper .info #read .comment-wrapper .comment-text[data-readmore][aria-expanded="false"] .shade,
-body.list_comments #info-wrapper .info #read .comment-wrapper .comment-text[data-readmore][aria-expanded="false"] .shade {
+body.comments #info-wrapper .info #read .comment-wrapper .comment-text[data-readmore][aria-expanded=false] .shade,
+body.comments_liked #info-wrapper .info #read .comment-wrapper .comment-text[data-readmore][aria-expanded=false] .shade,
+body.comments_season #info-wrapper .info #read .comment-wrapper .comment-text[data-readmore][aria-expanded=false] .shade,
+body.comments_episode #info-wrapper .info #read .comment-wrapper .comment-text[data-readmore][aria-expanded=false] .shade,
+body.list_comments #info-wrapper .info #read .comment-wrapper .comment-text[data-readmore][aria-expanded=false] .shade {
   background-image: -webkit-linear-gradient(top, rgba(29, 29, 29, 0) 0%, #1d1d1d 100%) !important;
   background-image: -o-linear-gradient(top, rgba(29, 29, 29, 0) 0%, #1d1d1d 100%) !important;
   background-image: linear-gradient(to bottom, rgba(29, 29, 29, 0) 0%, #1d1d1d 100%) !important;
   background-repeat: repeat-x !important;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#001D1D1D',endColorstr='#FF1D1D1D',GradientType=0) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#001D1D1D', endColorstr='#FF1D1D1D', GradientType=0) !important;
 }
 
 body.comments #info-wrapper .info #read .comment-wrapper .comment blockquote,
@@ -1076,12 +1095,12 @@ body.list_comments #info-wrapper .info #read .comment-wrapper .comment pre {
   color: #eee !important;
 }
 
-.personal-list .info .overview[data-readmore][aria-expanded="false"] .shade {
+.personal-list .info .overview[data-readmore][aria-expanded=false] .shade {
   background-image: -webkit-linear-gradient(top, rgba(29, 29, 29, 0) 0%, #1d1d1d 100%) !important;
   background-image: -o-linear-gradient(top, rgba(29, 29, 29, 0) 0%, #1d1d1d 100%) !important;
   background-image: linear-gradient(to bottom, rgba(29, 29, 29, 0) 0%, #1d1d1d 100%) !important;
   background-repeat: repeat-x !important;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#001D1D1D',endColorstr='#FF1D1D1D',GradientType=0) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#001D1D1D', endColorstr='#FF1D1D1D', GradientType=0) !important;
 }
 
 .btn-list-edit-items,
@@ -1097,7 +1116,7 @@ ul.lists li:not(.selected) {
   background-color: #333 !important;
 }
 
-@media (max-width: 767px) {
+@media(max-width: 767px) {
   body.lists #info-wrapper .comment-wrapper {
     border-top: none !important;
   }
@@ -1123,7 +1142,9 @@ ul.lists li:not(.selected) {
   color: #eee !important;
 }
 
-#progress-wrapper .row .main-info .seasons > div .season-toggle .fa {
+#progress-wrapper .row .main-info .seasons > div .season-toggle .fa,
+#progress-wrapper .row .main-info .seasons > div .season-toggle [class^=fa-],
+#progress-wrapper .row .main-info .seasons > div .season-toggle [class*=" fa-"] {
   color: #fff !important;
 }
 
@@ -1131,7 +1152,9 @@ ul.lists li:not(.selected) {
   color: #fff !important;
 }
 
-#progress-wrapper .row .main-info .seasons .link .fa {
+#progress-wrapper .row .main-info .seasons .link .fa,
+#progress-wrapper .row .main-info .seasons .link [class^=fa-],
+#progress-wrapper .row .main-info .seasons .link [class*=" fa-"] {
   color: #fff !important;
 }
 
@@ -1149,7 +1172,7 @@ body.discover #recent-comments-wrapper #recent-comments-title h5 {
 }
 
 body.discover #recent-comments-wrapper #recent-comments {
-  background-color: rgba(0, 0, 0, 0.6) !important;
+  background-color: rgba(0, 0, 0, .6) !important;
 }
 
 body.discover #recent-comments-wrapper #recent-comments .comment-outer-wrapper .above-comment {
@@ -1351,7 +1374,14 @@ body.authorized_applications h3.instructions,
 body.applications h3.instructions,
 body.widgets h3.instructions {
   background-color: #000 !important;
-  border-bottom: solid 1px #444 !important;
+  border-bottom-color: #444 !important;
+}
+
+body.settings h3.instructions.middle,
+body.authorized_applications h3.instructions.middle,
+body.applications h3.instructions.middle,
+body.widgets h3.instructions.middle {
+  border-top-color: #444 !important;
 }
 
 body.settings h3.help-text,
@@ -1396,6 +1426,15 @@ body.applications #widgets-wrapper .widget-row .code-wrapper code,
 body.widgets #widgets-wrapper .widget-row .code-wrapper code {
   background-color: #333 !important;
   color: #fff !important;
+}
+
+body.settings code,
+body.authorized_applications code,
+body.applications code,
+body.widgets code {
+  background-color: #3c1111 !important;
+  color: #fff !important;
+  border: none !important;
 }
 
 #authorized-applications .row:not(:first-child):not(.no-border) {
@@ -1699,23 +1738,23 @@ body.watchnow .streaming-links-wrapper .streaming-links {
   font-weight: 700 !important;
 }
 
-.dropdown-menu.textcomplete-dropdown[data-strategy="emojionearea"] {
+.dropdown-menu.textcomplete-dropdown[data-strategy=emojionearea] {
   background-color: #333 !important;
   color: #ccc !important;
   border-color: #666 !important;
 }
 
-.dropdown-menu.textcomplete-dropdown[data-strategy="emojionearea"] li.textcomplete-item a {
+.dropdown-menu.textcomplete-dropdown[data-strategy=emojionearea] li.textcomplete-item a {
   color: #ccc !important;
 }
 
-.dropdown-menu.textcomplete-dropdown[data-strategy="emojionearea"] li.textcomplete-item:hover,
-.dropdown-menu.textcomplete-dropdown[data-strategy="emojionearea"] li.textcomplete-item.active {
+.dropdown-menu.textcomplete-dropdown[data-strategy=emojionearea] li.textcomplete-item:hover,
+.dropdown-menu.textcomplete-dropdown[data-strategy=emojionearea] li.textcomplete-item.active {
   background-color: #222 !important;
 }
 
-.dropdown-menu.textcomplete-dropdown[data-strategy="emojionearea"] li.textcomplete-item:hover a,
-.dropdown-menu.textcomplete-dropdown[data-strategy="emojionearea"] li.textcomplete-item.active a {
+.dropdown-menu.textcomplete-dropdown[data-strategy=emojionearea] li.textcomplete-item:hover a,
+.dropdown-menu.textcomplete-dropdown[data-strategy=emojionearea] li.textcomplete-item.active a {
   color: #ccc !important;
 }
 

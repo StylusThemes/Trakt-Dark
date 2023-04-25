@@ -1,6 +1,6 @@
 [class=trakt]::after {
   white-space: pre !important;
-  content: "\a                Trakt Dark Ver. 0.0.9" !important;
+  content: "\a                Trakt Dark Ver. 0.0.10" !important;
 }
 
 #info-wrapper .info #actors .posters ul li .character {

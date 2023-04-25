@@ -6,12 +6,19 @@
 [data-tooltip="RSS Feed"],
 [data-tooltip="iCal Feed"],
 [data-tooltip="Notifications"],
+[data-tooltip="Filter by Title"],
+[data-tooltip="Filter by Streaming Services"],
+[data-section="progress_watched_reset"],
 a[class*="dark-knight"],
 a[href*="/forums"],
 a[href*="/vip/"],
 a[href*="/widgets"],
 a[href*="/year"] {
   display: none !important;
+}
+
+[data-original-title="Add additional plays"] {
+  display: initial !important;
 }
 
 #user-menu ul li.separator {

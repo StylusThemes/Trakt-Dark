@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Trakt Dark
-@version      0.0.9
+@version      0.0.10
 @description  Dark Knight for free
 @namespace    https://github.com/StylusThemes
 @author       StylusThemes <https://github.com/StylusThemes>
@@ -20,7 +20,7 @@ ADSN "No" <<<EOT
 VIPN "No" <<<EOT
  EOT;
 VIPY "Yes" <<<EOT
-[data-title="Clone into your account"],[data-title="Create a custom calendar"],[data-title="View watched progress"],[data-tooltip="CSV Export"],[data-tooltip="RSS Feed"],[data-tooltip="iCal Feed"],[data-tooltip=Notifications],a[class*=dark-knight],a[href*="/forums"],a[href*="/vip/"],a[href*="/widgets"],a[href*="/year"]{display:none!important}#user-menu ul li.separator{margin-top:-1px!important}div[id*=user-menu]>ul>li>a[href*="/settings"]{margin-top:2px!important}div[id*=user-menu]>ul>li>a[href*="/network"]{margin-bottom:2px!important}[class*=trakt-icon-backward]{display:none!important}#progress-wrapper>div>div>div>h3>a.ignore{margin-left:0!important} EOT;
+[data-section=progress_watched_reset],[data-title="Clone into your account"],[data-title="Create a custom calendar"],[data-title="View watched progress"],[data-tooltip="CSV Export"],[data-tooltip="Filter by Streaming Services"],[data-tooltip="Filter by Title"],[data-tooltip="RSS Feed"],[data-tooltip="iCal Feed"],[data-tooltip=Notifications],a[class*=dark-knight],a[href*="/forums"],a[href*="/vip/"],a[href*="/widgets"],a[href*="/year"]{display:none!important}[data-original-title="Add additional plays"]{display:initial!important}#user-menu ul li.separator{margin-top:-1px!important}div[id*=user-menu]>ul>li>a[href*="/settings"]{margin-top:2px!important}div[id*=user-menu]>ul>li>a[href*="/network"]{margin-bottom:2px!important}[class*=trakt-icon-backward]{display:none!important}#progress-wrapper>div>div>div>h3>a.ignore{margin-left:0!important} EOT;
 }
 
 @advanced dropdown WATCHNOW "Hide watch Now?" {
@@ -45,7 +45,7 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
 @-moz-document regexp("https?://trakt.tv/.*") {
   [class=trakt]::after {
     white-space: pre !important;
-    content: "\a                Trakt Dark Ver. 0.0.9" !important;
+    content: "\a                Trakt Dark Ver. 0.0.10" !important;
   }
 
   #info-wrapper .info #actors .posters ul li .character {
@@ -660,19 +660,28 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
     background-color: #777 !important
   }
 
-  .form-signin .chosen-container .chosen-choices {
+  .form-signin .chosen-container .chosen-choices,
+  .form-signin .chosen-container .chosen-single {
     background: #333 !important;
     color: #eee !important;
     border-color: #333 !important
   }
 
-  .form-signin .chosen-container .chosen-choices li.search-choice {
+  .form-signin .chosen-container .chosen-choices li.search-choice,
+  .form-signin .chosen-container .chosen-single li.search-choice {
     background: #222 !important;
     color: #eee !important
   }
 
-  .form-signin .chosen-container .chosen-choices li.search-field input[type=text] {
+  .form-signin .chosen-container .chosen-choices li.search-field input[type=text],
+  .form-signin .chosen-container .chosen-single li.search-field input[type=text] {
     color: #eee !important
+  }
+
+  .form-signin .chosen-container .chosen-search-input {
+    background: #222 !important;
+    color: #eee !important;
+    border-color: #444 !important
   }
 
   .form-signin .chosen-container .chosen-drop {
@@ -1172,6 +1181,10 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
 
   .comment-wrapper .pill.collaborators {
     background-color: #e85d04 !important
+  }
+
+  .comment-wrapper .pill.share-link {
+    background-color: #009edf !important
   }
 
   .comment-wrapper .pill.op {

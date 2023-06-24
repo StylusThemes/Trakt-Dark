@@ -45,7 +45,7 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
 @-moz-document regexp("https?://trakt.tv/.*") {
   [class=trakt]::after {
     white-space: pre !important;
-    content: "\a                Trakt Dark Ver. 0.0.10" !important;
+    content: "\a                Trakt Dark Ver. 0.0.11" !important;
   }
 
   #info-wrapper .info #actors .posters ul li .character {
@@ -268,6 +268,10 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
 @-moz-document regexp("https?://trakt.tv/.*") {
   #user-menu ul li a .icon {
     opacity: 1 !important
+  }
+
+  h3.help-text {
+    color: #999 !important
   }
 
   section {
@@ -702,6 +706,10 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
     color: #fff !important
   }
 
+  .form-signin .chosen-container .chosen-results li.highlighted .right-tag {
+    background-color: #333 !important
+  }
+
   .form-signin .chosen-container .chosen-results li.group-result {
     color: #999 !important;
     border-bottom-color: #555 !important
@@ -709,6 +717,11 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
 
   .form-signin .chosen-container .chosen-results li.group-result .select-all {
     color: #fff !important
+  }
+
+  .form-signin .chosen-container .chosen-results li .right-tag {
+    background-color: #444 !important;
+    color: #aaa !important
   }
 
   .dropdown .dropdown-toggle,
@@ -984,10 +997,6 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
     border-left-color: #444 !important
   }
 
-  #charts-wrapper h3 {
-    color: #999 !important
-  }
-
   #recently-watched-wrapper .quick-icons {
     background-color: #161616 !important
   }
@@ -1080,19 +1089,17 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
     background: rgba(255, 255, 255, .4) !important
   }
 
+  #info-wrapper .info .actors-wrapper .posters ul:hover li .titles .character,
+  #info-wrapper .info .actors-wrapper .posters ul:hover li .titles .count,
+  #info-wrapper .info .actors-wrapper .posters ul:hover li .titles .name {
+    color: #555 !important
+  }
+
   #info-wrapper .info .actors-wrapper .posters ul li .name {
     color: #aaa !important
   }
 
   #info-wrapper .info .actors-wrapper .posters ul li .character {
-    color: #fff !important
-  }
-
-  #info-wrapper .info .actors-wrapper .posters ul li:hover li .titles {
-    opacity: .3 !important
-  }
-
-  #info-wrapper .info .actors-wrapper .posters ul li:hover li .titles .name {
     color: #fff !important
   }
 
@@ -1314,47 +1321,43 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
     color: #fff !important
   }
 
-  #actors .tab-links a:not(.active) h3,
-  #comments .tab-links a:not(.active) h3,
-  #credits .tab-links a:not(.active) h3,
-  #crew .tab-links a:not(.active) h3,
-  #lists .tab-links a:not(.active) h3,
-  #replies .tab-links a:not(.active) h3 {
+  .tab-links a:not(.active)>h3 {
     color: #ccc !important
   }
 
-  #actors .tab-links a:not(.active) h3:hover .count,
-  #comments .tab-links a:not(.active) h3:hover .count,
-  #credits .tab-links a:not(.active) h3:hover .count,
-  #crew .tab-links a:not(.active) h3:hover .count,
-  #lists .tab-links a:not(.active) h3:hover .count,
-  #replies .tab-links a:not(.active) h3:hover .count {
+  .tab-links a:not(.active)>h3:hover .count {
     border-color: #fff !important;
     background-color: transparent !important;
     color: #fff !important
   }
 
-  #actors .tab-links a h3:hover,
-  #comments .tab-links a h3:hover,
-  #credits .tab-links a h3:hover,
-  #crew .tab-links a h3:hover,
-  #lists .tab-links a h3:hover,
-  #replies .tab-links a h3:hover {
-    color: #fff !important
+  .tab-links a>h3:hover {
+    color: #fff !important;
+    border-bottom-color: #fff !important
   }
 
-  #actors .tab-links a h3:hover .count,
-  #comments .tab-links a h3:hover .count,
-  #credits .tab-links a h3:hover .count,
-  #crew .tab-links a h3:hover .count,
-  #lists .tab-links a h3:hover .count,
-  #replies .tab-links a h3:hover .count {
+  .tab-links a>h3:hover .count {
     border-color: #fff !important;
     background-color: #fff !important;
     color: #000 !important
   }
 
-  #user-comments .inline-title {
+  .tab-links a>h3:hover:hover .count {
+    border-color: #000 !important;
+    background-color: #000 !important;
+    color: #fff !important
+  }
+
+  .pill-tab-links .tab-links>a>h3 {
+    background-color: rgba(255, 255, 255, .15) !important
+  }
+
+  .pill-tab-links .tab-links>a>h3:hover {
+    background-color: rgba(255, 255, 255, .35) !important
+  }
+
+  #user-comments .inline-title,
+  .user-comments .inline-title {
     background-color: #161616 !important
   }
 
@@ -1431,7 +1434,9 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
   }
 
   #bottom-stats-wrapper .col-stat.alt,
-  #boxes-wrapper .row .genres-stat-box {
+  #boxes-wrapper .row .genres-stat-box,
+  #favorites-wrapper,
+  body.users #charts-wrapper {
     background-color: #161616 !important
   }
 
@@ -1998,13 +2003,13 @@ PFBGC "Custom [requires Custom imgURL]" <<<EOT
     background: radial-gradient(center, circle cover, #000 0, rgba(0, 0, 0, .2) 100%) !important
   }
 
-  .on-off-wrapper.toggle-mode .on {
+  .on-off-wrapper.toggle-dark-knight-mode .on {
     background-color: #eee !important;
     color: #999 !important;
     font-weight: 400 !important
   }
 
-  .on-off-wrapper.toggle-mode .off {
+  .on-off-wrapper.toggle-dark-knight-mode .off {
     background-color: #ed1c24 !important;
     color: #fff !important;
     font-weight: 700 !important

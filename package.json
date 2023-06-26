@@ -1,10 +1,13 @@
 {
   "name": "trakt-dark",
   "title": "Trakt Dark",
-  "version": "0.0.10",
+  "version": "0.0.12",
   "description": "Dark Knight for free",
   "license": "CC-BY-SA-4.0",
-  "repository": "StylusThemes/Trakt-Dark",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StylusThemes/Trakt-Dark"
+  },
   "homepage": "https://github.com/StylusThemes/Trakt-Dark",
   "main": "style.user.css",
   "dependencies": {

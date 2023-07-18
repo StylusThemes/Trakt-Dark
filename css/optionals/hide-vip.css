@@ -17,6 +17,10 @@ a[href*="/year"] {
   display: none !important;
 }
 
+#progress-wrapper .row .main-info h3.show-title .reset {
+  display: none !important;
+}
+
 [data-original-title="Add additional plays"] {
   display: initial !important;
 }

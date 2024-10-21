@@ -67,6 +67,67 @@
          url(/assets/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular-159b5da43cd075c538889e1b84883da31c7f6b2e3608bfc4d424d810a773f034.svg#glyphicons_halflingsregular) format("svg")
   }
 
+  /* Deleted+Renamed selectors */
+  .trakt-icon-save:before {
+    content: "\e666";
+  }
+
+  header#top-nav ul.menu.with-large-icons li .icon .trakt-icon-trakt {
+    font-size: 32px;
+  }
+
+  header#top-nav ul.menu.with-large-icons li:hover .title .label-base.label-vip {
+    background-color: #fff;
+    color: #ed1c24;
+  }
+
+  .label-vip .trakt-icon-trakt {
+    vertical-align: top;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    font-size: 125% i;
+    margin: 0 i;
+  }
+
+  .label-vip.piller .trakt-icon-trakt {
+    display: none;
+  }
+
+  #auth-form-wrapper .logo-wrapper .base,
+  .checkin-modal .logo-wrapper .base {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 118px;
+    height: 118px;
+    left: 5px;
+    top: 5px
+  }
+
+  #auth-form-wrapper h1,
+  .checkin-modal h1 {
+    font-size: 30px;
+    margin: 85px 0 20px;
+    text-align: center;
+    font-family: proxima nova bold;
+    text-transform: uppercase;
+    letter-spacing: 4px
+  }
+
+  #auth-form-wrapper .logo-wrapper .base,
+  .checkin-modal .logo-wrapper .base {
+    width: 74px;
+    height: 74px;
+    left: 3px;
+    top: 4px
+  }
+
+  #auth-form-wrapper .logo-wrapper .logo,
+  .checkin-modal .logo-wrapper .logo {
+    background-size: 80px 80px
+  }
+
   /* Custom Fixes */
   body.dark-knight #ondeck-shows .grid-item .quick-icons {
     border: solid 1px #1d1d1d;
@@ -1321,5 +1382,451 @@
   .label-vip {
     /*font-weight: unset;*/
     font-family: proxima nova semibold;
+  }
+
+  .label-vip .years .years-text {
+    /*font-weight: unset;*/
+    font-family: proxima nova bold;
+  }
+
+  .label-vip.smaller .years-text,
+  .label-vip.piller .years-text {
+    /*font-weight: unset;*/
+    font-family: proxima nova semibold;
+  }
+
+  .label-private {
+    /*font-weight: unset;*/
+    font-family: proxima nova semibold;
+  }
+
+  .label-private.smaller {
+    /*font-weight: unset;*/
+    font-family: proxima nova semibold;
+  }
+
+  .label-beta,
+  .label-free,
+  .label-important {
+    /*font-weight: unset;*/
+    font-family: proxima nova semibold i;
+  }
+
+  .label-important {
+    background-color: #ed1c24 i;
+  }
+
+  #loading-bg {
+    background-color: rgba(0, 0, 0, .7);
+  }
+
+  #reset-user-data-banner .banner .buttons .btn {
+    /*font-weight: unset;*/
+    font-family: proxima nova bold;
+    color: #ed1c24;
+  }
+
+  .generic-datepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option:hover,
+  .generic-datepicker .xdsoft_calendar td.xdsoft_today,
+  .generic-datepicker .xdsoft_calendar td:hover,
+  .generic-datepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover,
+  .generic-datepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option.xdsoft_current,
+  .generic-datepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current,
+  .generic-datepicker .xdsoft_calendar td.xdsoft_default {
+    background: #ed1c24 i;
+  }
+
+  .popover.remove {
+    max-width: 400px i;
+  }
+
+  .popover.remove .popover-content > button {
+    /*font-weight: unset;*/
+    font-family: proxima nova semibold;
+  }
+
+  .popover .btn-list-popover-search.enabled {
+    color: #ed1c24;
+  }
+
+  .popover .date-range-wrapper .date-range-title {
+    /*font-weight: unset;*/
+    font-family: proxima nova semibold;
+  }
+
+  .popover .data-wrapper .buttons .icon.no {
+    color: #ed1c24;
+  }
+
+  .popover i.add-metadata.selected,
+  .popover i.add-play.selected {
+    color: #ed1c24;
+  }
+
+  .popover .metadata-wrapper button {
+    /*font-weight: unset;*/
+    font-family: proxima nova bold;
+  }
+
+  .feed-popover a {
+    color: #ed1c24;
+  }
+
+  .om1gYCfRiN-oVhoJ0rsnL-info,
+  .om1gYCfRiN-oVhoJ0rsnL-label {
+    /*font-weight: unset;*/
+    font-family: proxima nova;
+  }
+
+  .om1gYCfRiN-oVhoJ0rsnL-info:hover {
+    color: #ed1c24;
+  }
+
+  .om1gYCfRiN-oVhoJ0rsnL-Ba2KT6YF2O .inner h1,
+  .om1gYCfRiN-oVhoJ0rsnL-banner .inner h1,
+  .om1gYCfRiN-oVhoJ0rsnL-poster .inner h1 {
+    /*font-weight: unset;*/
+    font-family: proxima nova semibold;
+  }
+
+  .om1gYCfRiN-oVhoJ0rsnL-Ba2KT6YF2O .inner h1 .trakt-icon-trakt,
+  .om1gYCfRiN-oVhoJ0rsnL-banner .inner h1 .trakt-icon-trakt,
+  .om1gYCfRiN-oVhoJ0rsnL-poster .inner h1 .trakt-icon-trakt {
+    color: #ed1c24;
+  }
+
+  .om1gYCfRiN-oVhoJ0rsnL-Ba2KT6YF2O .inner .btn-primary,
+  .om1gYCfRiN-oVhoJ0rsnL-banner .inner .btn-primary,
+  .om1gYCfRiN-oVhoJ0rsnL-poster .inner .btn-primary {
+    /*font-weight: unset;*/
+    font-family: proxima nova bold;
+  }
+
+  .om1gYCfRiN-oVhoJ0rsnL-text h4 {
+    color: #ed1c24;
+  }
+
+  .om1gYCfRiN-oVhoJ0rsnL-text .btn-primary {
+    /*font-weight: unset;*/
+    font-family: proxima nova bold;
+  }
+
+  #om1gYCfRiN-IGJj59JMAC-xVRiWHDe6J .om1gYCfRiN-deefp.cto .crt_desc,
+  #om1gYCfRiN-LD3xSETSnk-Ba2KT6YF2O-wrapper .om1gYCfRiN-deefp.cto .crt_desc {
+    /*font-weight: unset;*/
+    font-family: proxima nova bold;
+  }
+
+  #om1gYCfRiN-IGJj59JMAC-wrapper .om1gYCfRiN-deefp.cto .crt_desc {
+    /*font-weight: unset;*/
+    font-family: proxima nova bold;
+  }
+
+  .tooltip.action-required .tooltip-arrow {
+    border-top-color: #ed1c24;
+  }
+
+  .tooltip.action-required .tooltip-inner {
+    background-color: #ed1c24;
+  }
+
+  .popover.remove .popover-title {
+    /*font-weight: unset;*/
+    font-family: proxima nova i;
+  }
+
+  .chart-tooltip {
+    /*font-weight: unset;*/
+    font-family: proxima nova semibold;
+  }
+
+  .chosen-container .chosen-results li.group-result .select-all {
+    /*font-weight: unset;*/
+    font-family: proxima nova;
+  }
+
+  #habla_oplink_a {
+    /*font-weight: unset;*/
+    font-family: proxima nova bold i;
+  }
+
+  .dropdown-menu > li > a.selected {
+    color: #ed1c24;
+  }
+
+  .dropdown-menu > li > a.vip-only .trakt-vip {
+    color: #ed1c24;
+  }
+
+  .dropdown-menu > li > a.vip-only .trakt-vip i {
+    color: #ed1c24;
+  }
+
+  .dropdown-menu > li > a.vip-only:hover {
+    background-color: #ed1c24;
+  }
+
+  .genre-bars .bar .percentage {
+    /*font-weight: unset;*/
+    font-family: proxima nova;
+  }
+
+  .genre-bars .bar label {
+    /*font-weight: unset;*/
+    font-family: proxima nova semibold;
+  }
+
+  .genre-bars .bar label .count {
+    /*font-weight: unset;*/
+    font-family: proxima nova;
+  }
+
+  body:not(.dark-knight) .genre-bars.light .bar label .count a:hover {
+    color: #ed1c24;
+  }
+
+  .user-card .user-info-wrapper .user-info .user-display-name {
+    /*font-weight: unset;*/
+    font-family: proxima nova semibold;
+  }
+
+  .user-card .user-info-wrapper .user-info .buttons .btn {
+    /*font-weight: unset;*/
+    font-family: proxima nova bold;
+  }
+
+  .user-card .user-info-wrapper .user-info .buttons .btn-follow {
+    background-color: #ed1c24;
+    border-color: #ed1c24;
+  }
+
+  .user-card .user-info-wrapper .user-info .buttons .btn-follow:hover,
+  .user-card .user-info-wrapper .user-info .buttons .btn-follow:focus,
+  .user-card .user-info-wrapper .user-info .buttons .btn-follow:active,
+  .user-card .user-info-wrapper .user-info .buttons .btn-follow.active,
+  .open > .user-card .user-info-wrapper .user-info .buttons .btn-follow.dropdown-toggle {
+    background-color: #c61017;
+    border-color: #bd0f16;
+  }
+
+  .user-card .user-info-wrapper .user-info .buttons .btn-follow.disabled,
+  .user-card .user-info-wrapper .user-info .buttons .btn-follow.disabled:hover,
+  .user-card .user-info-wrapper .user-info .buttons .btn-follow.disabled:focus,
+  .user-card .user-info-wrapper .user-info .buttons .btn-follow.disabled:active,
+  .user-card .user-info-wrapper .user-info .buttons .btn-follow.disabled.active,
+  .user-card .user-info-wrapper .user-info .buttons .btn-follow[disabled],
+  .user-card .user-info-wrapper .user-info .buttons .btn-follow[disabled]:hover,
+  .user-card .user-info-wrapper .user-info .buttons .btn-follow[disabled]:focus,
+  .user-card .user-info-wrapper .user-info .buttons .btn-follow[disabled]:active,
+  .user-card .user-info-wrapper .user-info .buttons .btn-follow.active[disabled],
+  fieldset[disabled] .user-card .user-info-wrapper .user-info .buttons .btn-follow,
+  fieldset[disabled] .user-card .user-info-wrapper .user-info .buttons .btn-follow:hover,
+  fieldset[disabled] .user-card .user-info-wrapper .user-info .buttons .btn-follow:focus,
+  fieldset[disabled] .user-card .user-info-wrapper .user-info .buttons .btn-follow:active,
+  fieldset[disabled] .user-card .user-info-wrapper .user-info .buttons .btn-follow.active {
+    background-color: #ed1c24;
+    border-color: #ed1c24;
+  }
+
+  .user-card .user-info-wrapper .user-info .buttons .btn-follow .badge {
+    color: #ed1c24;
+  }
+
+  .filter-dropdown .filter-counter {
+    /*font-weight: unset;*/
+    font-family: proxima nova bold;
+    color: #ed1c24;
+  }
+
+  .form-signin .oauth-choices .btn {
+    /*font-weight: unset;*/
+    font-family: proxima nova bold;
+  }
+
+  .form-signin h4 {
+    /*font-weight: unset;*/
+    font-family: proxima nova semibold;
+  }
+
+  .form-signin .under-help .error {
+    color: #ed1c24;
+  }
+
+  #auth-form-wrapper .logo-wrapper,
+  .checkin-modal .logo-wrapper {
+    width: 128px;
+    height: 128px;
+    top: -64px;
+    margin-left: -64px;
+  }
+
+  #auth-form-wrapper .logo-wrapper .logo,
+  .checkin-modal .logo-wrapper .logo {
+    background: url(/assets/logos/medium@2x-11822a28bccd4f9940f69add6c4a9f06fab374da2071c5474499ea175558c46b.png) no-repeat;
+    background-size: 128px 128px;
+  }
+
+  #auth-form-wrapper h2.error,
+  .checkin-modal h2.error {
+    /*font-weight: unset;*/
+    font-family: proxima nova semibold;
+  }
+
+  #auth-form-wrapper .btn-primary,
+  .checkin-modal .btn-primary {
+    /*font-weight: unset;*/
+    font-family: proxima nova bold;
+  }
+
+  #auth-form-wrapper .auth-services-wide-buttons-wrapper form button .btn,
+  .checkin-modal .auth-services-wide-buttons-wrapper form button .btn {
+    /*font-weight: unset;*/
+    font-family: proxima nova semibold;
+  }
+
+  #auth-form-wrapper .inset-wrapper,
+  .checkin-modal .inset-wrapper {
+    /*font-weight: unset;*/
+    font-family: proxima nova semibold;
+  }
+
+  #auth-form-wrapper .inset-wrapper.user-block .username,
+  .checkin-modal .inset-wrapper.user-block .username {
+    /*font-weight: unset;*/
+    font-family: proxima nova semibold;
+  }
+
+  #auth-form-wrapper .accept-terms a:hover,
+  .checkin-modal .accept-terms a:hover {
+    color: #ed1c24;
+    border-color: #ed1c24;
+  }
+
+  #auth-form-wrapper #error-explanation a,
+  #auth-form-wrapper #error_explanation a,
+  .checkin-modal #error-explanation a,
+  .checkin-modal #error_explanation a {
+    border-bottom: dotted 1px #ed1c24;
+  }
+
+  #auth-form-wrapper #error-explanation a:hover,
+  #auth-form-wrapper #error_explanation a:hover,
+  .checkin-modal #error-explanation a:hover,
+  .checkin-modal #error_explanation a:hover {
+    border-bottom: solid 1px #ed1c24;
+  }
+
+  #auth-form-wrapper h1,
+  .checkin-modal h1 {
+    margin-top: 50px;
+  }
+
+  #auth-form-wrapper .auth-services .btn {
+    /*font-weight: unset;*/
+    font-family: proxima nova;
+  }
+
+  .with-icons .with-icon .icon {
+    color: #ed1c24;
+  }
+
+  #authorized-applications .row .btn {
+    /*font-weight: unset;*/
+    font-family: proxima nova semibold;
+  }
+
+  #authorized-applications .row .info h4 {
+    /*font-weight: unset;*/
+    font-family: proxima nova semibold;
+  }
+
+  #authorized-applications .row .info .actions .btn {
+    /*font-weight: unset;*/
+    font-family: proxima nova;
+  }
+
+  #authorized-applications .row .info .actions .btn.delete {
+    color: #ed1c24;
+  }
+
+  .api-auth-choices .auth-title {
+    /*font-weight: unset;*/
+    font-family: proxima nova bold;
+  }
+
+  .api-auth-choices h4 {
+    /*font-weight: unset;*/
+    font-family: proxima nova semibold;
+  }
+
+  .checkin-modal h1 {
+    /*font-weight: unset;*/
+    font-family: proxima nova semibold;
+  }
+
+  .checkin-modal h2 .main-title-sxe {
+    /*font-weight: unset;*/
+    font-family: proxima nova bold;
+  }
+
+  #moderate-modal h4,
+  #metadata-merge-modal h4,
+  #metadata-move-modal h4,
+  #metadata-split-modal h4 {
+    /*font-weight: unset;*/
+    font-family: proxima nova semibold;
+  }
+
+  #moderate-modal h5,
+  #metadata-merge-modal h5,
+  #metadata-move-modal h5,
+  #metadata-split-modal h5 {
+    /*font-weight: unset;*/
+    font-family: proxima nova semibold;
+  }
+
+  #moderate-modal .btn-primary,
+  #metadata-merge-modal .btn-primary,
+  #metadata-move-modal .btn-primary,
+  #metadata-split-modal .btn-primary {
+    /*font-weight: unset;*/
+    font-family: proxima nova bold;
+  }
+
+  #moderate-modal .input-row .delete input[type=checkbox]:checked + label,
+  #metadata-merge-modal .input-row .delete input[type=checkbox]:checked + label,
+  #metadata-move-modal .input-row .delete input[type=checkbox]:checked + label,
+  #metadata-split-modal .input-row .delete input[type=checkbox]:checked + label {
+    color: #ed1c24;
+  }
+
+  #moderate-modal .streaming-links a,
+  #metadata-merge-modal .streaming-links a,
+  #metadata-move-modal .streaming-links a,
+  #metadata-split-modal .streaming-links a {
+    color: #ed1c24;
+  }
+
+  body.calendars .date-separator.today {
+    color: #ed1c24;
+  }
+
+  body.calendars .date-separator .date {
+    /*font-weight: unset;*/
+    font-family: proxima nova bold;
+  }
+
+  body.calendars .date-separator .month {
+    /*font-weight: unset;*/
+    font-family: proxima nova bold;
+  }
+
+  body.calendars .date-separator .day {
+    /*font-weight: unset;*/
+    font-family: proxima nova;
+  }
+
+  body.calendars .flex-item:hover .date-separator {
+    background-color: #ed1c24;
   }
 }

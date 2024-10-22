@@ -1,0 +1,48 @@
+  @font-face {
+    font-family: proxima nova semibold;
+    src: url(/assets/ProximaNova-Sbold-webfont-6d6863579f09f200eb578725f1dc219cca1d1a849e9d8a01d131e60a4df9a504.woff) format("woff"),
+         url(/assets/ProximaNova-Sbold-webfont-05a85e07be79d555f6973bdee47bac2d13cedef6cf928bd0c28b1532fa8cd661.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+  }
+
+  @font-face {
+    font-family: proxima nova;
+    src: url(/assets/ProximaNova-Reg-webfont-0e888acb11ee6bc4ed424777e70e07b35cc334643bc21f455a4159ec6398991e.woff) format("woff"),
+         url(/assets/ProximaNova-Reg-webfont-0916f6ea8c0c13bda775057f6f96b3a5c4db125253697219a7a69897a32d7969.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+  }
+
+  @font-face {
+    font-family: proxima nova bold;
+    src: url(/assets/ProximaNova-Bold-webfont-25e2a8b010695c7221256170e518deabdc879ff8ff350fcb5bd641e099604941.woff) format("woff"),
+         url(/assets/ProximaNova-Bold-webfont-3d87180cf4b59a47f51c076bcb978f9518ae7987744a93ff8bcb012603cec6e0.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+  }
+
+  @font-face {
+    font-family: trakt;
+    src: url(/assets/trakt-932d9f1902255387ed8ba3007dd19a3d8db4f079a5bf55f0a97a4b3e8e102b60.woff?rwqfl1) format("woff"),
+         url(/assets/trakt-ac14099f66786777c698ea0f35032707476983e5ed0ea7be2550784490def03f.ttf?rwqfl1) format("truetype");
+    font-weight: 400;
+    font-style: normal
+  }
+
+  @font-face {
+    font-family: logos;
+    src: url(/assets/logos-c2e74e1e9287cae0f70cc987f7ac27208cf70e7b3a3802e53a292627564e2e9e.woff?xdc4l8) format("woff"),
+         url(/assets/logos-de1857018ec8dfee473eb6dd887489631a22bb5c83efcb4cd244ff2d96fa3415.ttf?xdc4l8) format("truetype");
+    font-weight: 400;
+    font-style: normal
+  }
+
+  @font-face {
+    font-family: glyphicons halflings;
+    src: url(/assets/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular-15415a60389705f0e6e2bf7114bcb8df41d5b64c9e1285efdf1ed5bdbf608050.eot);
+    src: url(/assets/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular-15415a60389705f0e6e2bf7114bcb8df41d5b64c9e1285efdf1ed5bdbf608050.eot#iefix) format("embedded-opentype"),
+         url(/assets/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular-64da709cee30cc2d0f694fb5b2558d2e4b99e18be0faa9d8f04d6cd0dfb441c7.woff) format("woff"),
+         url(/assets/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular-2d41026d28df88dd547243cfb38ce91b6937b50ffaf7e2c19a76d75119de61e8.ttf) format("truetype"),
+         url(/assets/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular-159b5da43cd075c538889e1b84883da31c7f6b2e3608bfc4d424d810a773f034.svg#glyphicons_halflingsregular) format("svg")
+  }

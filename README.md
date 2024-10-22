@@ -25,21 +25,21 @@ If you would like to contribute to this repository, please...
 2. 👌 Create a pull request!
 
 <!-- BADGES -->
-[version]: https://flat.badgen.net/github/release/StylusThemes/Trakt-Depurplify
+[version]: https://flat.badgen.net/github/release/StylusThemes/Trakt-Depurplify?cache=300
 [1]: #
 [install]: https://flat.badgen.net/badge/install%20directly%20from/GitHub/00ADAD "Click here!"
 [2]: https://raw.githubusercontent.com/StylusThemes/Trakt-Depurplify/main/trakt-depurplify.user.styl
-[stars]: https://flat.badgen.net/github/stars/StylusThemes/Trakt-Depurplify
+[stars]: https://flat.badgen.net/github/stars/StylusThemes/Trakt-Depurplify?cache=300
 [3]: https://github.com/StylusThemes/Trakt-Depurplify/stargazers
-[watchers]: https://flat.badgen.net/github/watchers/StylusThemes/Trakt-Depurplify
+[watchers]: https://flat.badgen.net/github/watchers/StylusThemes/Trakt-Depurplify?cache=300
 [4]: https://github.com/StylusThemes/Trakt-Depurplify/watchers
-[open issues]: https://flat.badgen.net/github/open-issues/StylusThemes/Trakt-Depurplify
-[closed issues]: https://flat.badgen.net/github/closed-issues/StylusThemes/Trakt-Depurplify
+[open issues]: https://flat.badgen.net/github/open-issues/StylusThemes/Trakt-Depurplify?cache=300
+[closed issues]: https://flat.badgen.net/github/closed-issues/StylusThemes/Trakt-Depurplify?cache=300
 [5]: https://github.com/StylusThemes/Trakt-Depurplify/issues
-[license]: https://flat.badgen.net/github/license/StylusThemes/Trakt-Depurplify
+[license]: https://flat.badgen.net/github/license/StylusThemes/Trakt-Depurplify?cache=300
 [6]: https://creativecommons.org/licenses/by-sa/4.0/
-[last commit]: https://flat.badgen.net/github/last-commit/StylusThemes/Trakt-Depurplify
-[7]: https://github.com/StylusThemes/Trakt-Depurplify/commits/master
+[last commit]: https://flat.badgen.net/github/last-commit/StylusThemes/Trakt-Depurplify?cache=300
+[7]: https://github.com/StylusThemes/Trakt-Depurplify/commits/main
 [badges]: https://flat.badgen.net/badge/amount%20of%20badges/12/orange
 
 <!-- Trakt LINK -->

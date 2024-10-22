@@ -1,7 +1,7 @@
 {
   "name": "trakt-depurplify",
   "title": "Trakt - Depurplify",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Reverse the Purplification of Trakt!",
   "license": "CC-BY-SA-4.0",
   "repository": {

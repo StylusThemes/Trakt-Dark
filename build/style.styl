@@ -60,12 +60,32 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: ROOT :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
   :root {
-    --brand-primary: #ed1c24;
-    --brand-primary-hover: #af0e14;
+    --progress-watched: #1db75e;
+    --progress-watched-lighten: #24c76e;
+    --progress-collected: #009edf;
+    --progress-not-watched: #ed1c24;
   }
 }
 
 @-moz-document url-prefix("https://trakt.tv") {
   /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: START OF THEME :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
+  /*:: Progress Page wrapper checkmarks ::*/
+  #progress-wrapper .row .main-info .seasons .episodes .episode.check a,
+  #progress-wrapper .row .main-info .seasons .episodes .episode.collection a {
+    color: var(--progress-watched) i;
+  }
+
+  #progress-wrapper .row .main-info .seasons .episodes .episode.delete a {
+    color: var(--progress-not-watched) i;
+  }
+
+  #progress-wrapper .row .main-info .seasons .episodes .episode.other a {
+    color: var(--progress-collected) i;
+  }
+
+  body.dark-knight #progress-wrapper .row .main-info .seasons .episodes .episode.check a,
+  body.dark-knight #progress-wrapper .row .main-info .seasons .episodes .episode.collection a {
+    color: var(--progress-watched-lighten) i;
+  }
 }
